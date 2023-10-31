@@ -6,9 +6,9 @@ using UnityEngine;
 public class Patrol : MonoBehaviour
 {
     [SerializeField] private Transform[] points;
-    [SerializeField] private float moveSpeed = 3;
+    [SerializeField] private float moveSpeed = 10;
     [SerializeField] private float targetRadius = 0.1f;
-    [SerializeField] private float timeToRotate = 2f;
+    [SerializeField] private float timeToRotate = 0.5f;
 
     private int indexOfTarget;
     private Vector3 targetPoint;
