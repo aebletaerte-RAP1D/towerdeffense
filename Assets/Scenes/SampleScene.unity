@@ -7866,6 +7866,7 @@ MonoBehaviour:
   - {fileID: 540689755}
   - {fileID: 966575854}
   - {fileID: 1166396796}
+  - {fileID: 1436173405}
   moveSpeed: 10
   targetRadius: 0.1
   timeToRotate: 0.5
