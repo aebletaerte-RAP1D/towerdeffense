@@ -1,6 +1,8 @@
 using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using TMPro;
+
 public class WaveSpawner : MonoBehaviour {
 
     public Transform enemyPrefab;
@@ -8,7 +10,7 @@ public class WaveSpawner : MonoBehaviour {
     public float timeBetweenWaves = 7f;
     private float countdown = 3f;
 
-    public Text waveCountdownText;
+    public TMP_Text waveCountdownText;
     private int waveIndex = 1;
 
     void Update ()
@@ -22,13 +24,12 @@ public class WaveSpawner : MonoBehaviour {
 
         countdown -= Time.deltaTime;
 
-        waveCountdownText.text = MathF.Floor(countdown).ToString();
+        waveCountdownText.text = Mathf.Round(countdown).ToString();
     }
     
     IEnumerator SpawnWave ()
     {
-        
-        for (int i = 0; i < waveNumber; i++)
+        for (int i = 0; i < waveIndex; i++)
         {
             SpawnEnemy();
             yield return new WaitForSeconds(1f);
@@ -40,6 +41,7 @@ public class WaveSpawner : MonoBehaviour {
     void SpawnEnemy ()
     {
         Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
+
     }
 
 }
