@@ -11,11 +11,11 @@ public class Patrol : MonoBehaviour
     [SerializeField] private float timeToRotate = 0.1f;
 
     private int indexOfTarget;
-    private Vector3 targetPoint;
+   private Vector3 targetPoint;
 
     private Vector3 oldRotation;
     private Vector3 targetRotation;
-    private float rotateTimer = 0f;
+    private float rotateTimer = 0f; 
 
     private CharacterController controller;
 
@@ -64,6 +64,11 @@ public class Patrol : MonoBehaviour
         {
             NextTarget();
             LookAtTarget();
+        }
+
+        if (indexOfTarget == 13)
+        {
+            destroy gameObject
         }
 
         SetRotation();
