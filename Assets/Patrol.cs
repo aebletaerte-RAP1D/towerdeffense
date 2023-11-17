@@ -66,11 +66,6 @@ public class Patrol : MonoBehaviour
             LookAtTarget();
         }
 
-        if (indexOfTarget == 13)
-        {
-            destroy gameObject
-        }
-
         SetRotation();
         if (rotateTimer > timeToRotate)
         {
