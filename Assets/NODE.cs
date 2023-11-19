@@ -1,18 +1,25 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class NODE : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
+public class NODE : MonoBehaviour {
+   
+    public Color hoverColor;
+
+    private Renderer rend;
+    private Color startColor;
+
+    void Start ()
     {
-        
+        rend = GetComponent<Renderer>();
+        startColor = rend.material.color;
+    }
+    void OnMouseEnter ()
+    {
+        rend.material.color = hoverColor;
     }
 
-    // Update is called once per frame
-    void Update()
+
+    void OnMouseExit ()
     {
-        
+        rend.material.color = startColor;
     }
 }
