@@ -12239,6 +12239,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LuffyAlly
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 81a9b1398e4b3c34790d4b62a6a69f3d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8879528566716807029, guid: 81a9b1398e4b3c34790d4b62a6a69f3d, type: 3}
       propertyPath: m_LocalPosition.y
       value: 1.197
@@ -12250,10 +12254,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 81a9b1398e4b3c34790d4b62a6a69f3d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1892749369}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81a9b1398e4b3c34790d4b62a6a69f3d, type: 3}
 --- !u!1 &1337158842
 GameObject:
@@ -12275,7 +12276,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!136 &1337158843
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -16801,23 +16802,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4190684801729746083, guid: 1acd3795db664e149be28905a87e7083, type: 3}
   m_PrefabInstance: {fileID: 1874177406}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1892749368 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 81a9b1398e4b3c34790d4b62a6a69f3d, type: 3}
-  m_PrefabInstance: {fileID: 1331069496}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1892749369
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1892749368}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 077f06a95e5e56d46959b486e75e9d07, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1899773047
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16923,7 +16907,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 48469802}
   spawnPoint: {fileID: 760881683}
-  timeBetweenWaves: 10
+  timeBetweenWaves: 7
   waveCountdownText: {fileID: 1407315600}
 --- !u!4 &1913721048
 Transform:
